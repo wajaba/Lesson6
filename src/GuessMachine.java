@@ -9,5 +9,14 @@ public class GuessMachine {
     public double getNumber() {
        return Math.random()*100 +1;
     }
-    
+    public boolean CheckGuess(int G) {
+        boolean Guess = (G >= 2 && G <= 100);
+        if (Guess) {
+            plyrguess = G;
+            return true;
+        } else {
+
+            return false;
+        }
+    }
 }
