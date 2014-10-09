@@ -1,6 +1,7 @@
 
 public class GuessingGame extends javax.swing.JFrame {
-
+int myGuess;
+String txtguess;
     public GuessingGame() {
         initComponents();
     }
@@ -93,7 +94,7 @@ public class GuessingGame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        plyrguess = integer.parseInt(txtguess.getText());
+        myGuess =Integer.parseInt(txtguess.getText());
      //  if (gm.setGuess(myguess));
         //  lblout.settext("you guessed" +myGuess+ gm.giveHint());
         //else
